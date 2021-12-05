@@ -16,6 +16,7 @@ import { Logo } from './Logo';
 import { LinkItem } from './LinkItem';
 import { HamburgerIcon } from '@chakra-ui/icons'
 import { ThemeToggleButton } from './ThemeToggleButton';
+import { Link as RouteLink } from "react-router-dom";
 
 type Props = {
   path: string,
@@ -82,18 +83,18 @@ export function Navbar(props: Props) {
                 aria-label="Options"
               />
               <MenuList>
-                <Link href="/exchange">
-                  <MenuItem as={Link}>Exchange</MenuItem>
-                </Link>
-                <Link href="/pools">
-                  <MenuItem as={Link}>Pools</MenuItem>
-                </Link>
-                <Link href="/staking">
-                  <MenuItem as={Link}>Staking</MenuItem>
-                </Link>
-                <Link href="/info">
-                  <MenuItem as={Link}>Info</MenuItem>
-                </Link>
+                <RouteLink to="/exchange">
+                  <MenuItem>Exchange</MenuItem>
+                </RouteLink>
+                <RouteLink to="/pools">
+                  <MenuItem>Pools</MenuItem>
+                </RouteLink>
+                <RouteLink to="/staking">
+                  <MenuItem>Staking</MenuItem>
+                </RouteLink>
+                <RouteLink to="/info">
+                  <MenuItem>Info</MenuItem>
+                </RouteLink>
               </MenuList>
             </Menu>
           </Box>

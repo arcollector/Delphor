@@ -1,7 +1,13 @@
-import { Navbar } from '../components/Navbar'
 import { Box, Container } from '@chakra-ui/react'
+import {
+  BrowserRouter,
+  Routes,
+  Route
+} from "react-router-dom";
+import { Navbar } from '../components/Navbar'
 import { Footer } from '../components/Footer'
 import { Home } from '../../Home';
+import { Exchange } from '../../Exchange';
 
 export function Main() {
   return (
@@ -9,8 +15,13 @@ export function Main() {
       <Navbar path="" />
 
       <Container maxW="container.md" pt={14}>
-        <Home />
-
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/exchange" element={<Exchange />} />
+            <Route path="/pools" element={<Exchange />} />
+            <Route path="/staking" element={<Exchange />} />
+            <Route path="/info" element={<Exchange />} />
+          </Routes>
         <Footer />
       </Container>
     </Box>
