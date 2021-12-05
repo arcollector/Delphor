@@ -30,4 +30,5 @@ const config = {
   useSystemColorMode: true
 }
 
-export const theme = extendTheme({ ...config, ...styles, ...components, ...fonts, ...colors })
+export const theme = extendTheme({ ...config, styles,
+  components, fonts, colors })
