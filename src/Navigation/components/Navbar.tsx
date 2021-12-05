@@ -1,7 +1,6 @@
 import {
   Container,
   Box,
-  Link,
   Stack,
   Heading,
   Flex,
@@ -10,20 +9,20 @@ import {
   MenuList,
   MenuButton,
   IconButton,
-  useColorModeValue
-} from '@chakra-ui/react'
+  useColorModeValue,
+} from '@chakra-ui/react';
 import { Logo } from './Logo';
 import { LinkItem } from './LinkItem';
-import { HamburgerIcon } from '@chakra-ui/icons'
+import { HamburgerIcon } from '@chakra-ui/icons';
 import { ThemeToggleButton } from './ThemeToggleButton';
-import { Link as RouteLink } from "react-router-dom";
+import { Link as RouteLink } from 'react-router-dom';
 
 type Props = {
-  path: string,
+  path: string;
 };
 
 export function Navbar(props: Props) {
-  const { path } = props
+  const { path } = props;
 
   return (
     <Box
@@ -101,5 +100,5 @@ export function Navbar(props: Props) {
         </Box>
       </Container>
     </Box>
-  )
+  );
 }

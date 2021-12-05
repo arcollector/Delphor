@@ -1,8 +1,4 @@
-import {
-  Container,
-  Box,
-  useColorModeValue
-} from '@chakra-ui/react';
+import { Container, Box, useColorModeValue } from '@chakra-ui/react';
 
 export function Home() {
   return (
