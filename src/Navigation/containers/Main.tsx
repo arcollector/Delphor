@@ -4,6 +4,7 @@ import { Navbar } from '../components/Navbar';
 import { Footer } from '../components/Footer';
 import { Home } from '../../Home';
 import { Exchange } from '../../Exchange';
+import { Pools } from '../../Pools';
 
 export function Main() {
   return (
@@ -14,7 +15,7 @@ export function Main() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/exchange" element={<Exchange />} />
-          <Route path="/pools" element={<Exchange />} />
+          <Route path="/pools" element={<Pools />} />
           <Route path="/staking" element={<Exchange />} />
           <Route path="/info" element={<Exchange />} />
         </Routes>
