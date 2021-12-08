@@ -10,6 +10,16 @@ const styles = {
 };
 
 const components = {
+  Heading: {
+    baseStyle: (props: ReturnType<typeof mode>) => ({
+      color: mode('#333', '#fff')(props),
+    }),
+  },
+  Text: {
+    baseStyle: (props: ReturnType<typeof mode>) => ({
+      textAlign: 'left',
+    }),
+  },
   Link: {
     baseStyle: (props: ReturnType<typeof mode>) => ({
       color: mode('#3d7aed', '#ff63c3')(props),
